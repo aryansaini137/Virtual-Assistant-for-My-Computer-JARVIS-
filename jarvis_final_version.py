@@ -153,7 +153,7 @@ class MyFrame(wx.Frame):
 
 			try:
 			#wolframalpha
-					app_id = "U8XKXH-PWQUV5YGHG"
+					app_id = "API_KEY"
 					client = wolframalpha.Client(app_id)
 					res = client.query(input)
 					answer = next(res.results).text
@@ -167,7 +167,7 @@ class MyFrame(wx.Frame):
 MONTHS=["january","february","march","april","may","june","july","august","september","october","november","december"]
 DAYS=["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
 DAY_EXTENTIONS=["rd","th","st","nd"]
-SCOPES = ['https://www.googleapis.com/auth/calendar.readonly']
+SCOPES = ['GOOGLE_API_LINK_calendar']
 
 def authenticate_google():
     creds = None
@@ -291,9 +291,9 @@ def note(text):
 
 
 def weather(text):
-	api_key = "22026cca199820bac1bb4bb34bba8371"
+	api_key = "weather_API_KEY"
 
-	base_url = "http://api.openweathermap.org/data/2.5/weather?"
+	base_url = "API_openweathermap.org_BASE_url"
 
 	complete_url = base_url + "appid=" + api_key + "&q=" + text
 
@@ -354,7 +354,7 @@ def open1(query):
 	return
 
 def NewsFromBBC():
-	main_url = " http://newsapi.org/v2/top-headlines?country=in&apiKey=b76359807eca4f8f80bf3c6d7ecfe485"
+	main_url = "NEWS_API_KEY"
 	open_bbc_page = requests.get(main_url).json()
 	article = open_bbc_page["articles"]
 	results = []
@@ -421,8 +421,8 @@ def Send_Email(a,b):
 	server = smtplib.SMTP('smtp.gmail.com',587)
 	server.ehlo()
 	server.starttls()
-	server.login('swiftryan235@gmail.com','aryansaini1234')
-	server.sendmail('swiftryan235@gmail.com',b,content)
+	server.login('EMAIL_ID','EMAIL_PASSWORD')
+	server.sendmail('EMAIL_ID',b,content)
 	speak("Email has been send")
 	server.close()
 
@@ -439,11 +439,11 @@ def sc_():
 def whatsapp_():
     x=copy_()
     print(x)
-    sid='AC64a32b698b25151627cc5b31a62fc3d4'
-    token='2099c040584f45e151ff459fc45a49f5'
+    sid='SID_KEY'
+    token='TOKEN_KEY'
     client = Client(sid, token)
-    form_whatsapp_number='whatsapp:+14155238886'
-    to_whatsapp_number='whatsapp:+917983884175'
+    form_whatsapp_number='TWILIO_NUMBER'
+    to_whatsapp_number='YOUR_WHATSAPP_NUMBER'
     body=x
     client.messages.create(to=to_whatsapp_number,from_=form_whatsapp_number,body=body)
     return
@@ -476,7 +476,7 @@ def command(query,number):
             webbrowser.open("https://timesofindia.indiatimes.com/")
     elif 'music' in query:
         speak("okay opening my personal favorite spotify ")
-        os.chdir(r"C:\Users\Aryan Saini\AppData\Roaming\Microsoft\Windows\Start Menu\Programs")
+        os.chdir(r"C:\Users\USER_NAME\AppData\Roaming\Microsoft\Windows\Start Menu\Programs")
         os.system("start Spotify")
         os.chdir(r"E:\AL-code")
     elif 'search' in query or 'play' in query :
@@ -551,7 +551,7 @@ def command(query,number):
 
                 try:
                 #wolframalpha
-                        app_id = "U8XKXH-PWQUV5YGHG"
+                        app_id = "wolframalpha_API_KEY"
                         client = wolframalpha.Client(app_id)
                         res = client.query(query)
                         answer = next(res.results).text
