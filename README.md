@@ -1,2 +1,13 @@
 # Virtual-Assistant-for-My-Computer-JARVIS-
 :A virtual assistant, also called an AI assistant or digital assistant, is an application program that understands natural language voice commands and completes tasks for the user.
+FEATURES:-
+1. UNDERSTAND HUMAN LANGUAGE.
+2. CAN SOLVE ANY TYPE OF MATHEMATICAL PROBLEMS.
+3. SET,REMIND IMPORTANT DATE FROM YOUR GOOGLE CALENDER.
+4. SEND EMAIL, ADD NEW EMAIL IN THE SQL DATABASE ONLY BY SPEAKING.
+5. CAN SEARCH ANY FILE IN THE WHOLE SYSTEM BY JUST GIVING "FILE_NAME".
+6. YOU CAN TALK TO JARVIS IN WHAT'SAPP.
+7. YOU CAN SEND ANY TEXT OR URL FROM YOUR COMPUTER TO YOUR WHHAT'SAPP JUST BY SPEAK("JARVIS please send me this text or url in what'sapp").
+8. CAN OPEN SOME OF THE APP IS YOUR COMPUTER ON YOUR COMMAND APP's LIKE ("Spotify, "cmd", Chrome, etc).
+9. CAN UPDATE YOU TODAY'S WEATHER AND NEWS UPDATE'S.
+10. JARVIS CAN ALSO ANSWER BASIC conversation.
