@@ -12,4 +12,4 @@
 9. Can Update You Today'S Weather And News Update'S.
 10. Jarvis Can Also Answer Basic Conversation.
 
-<img src="https://github.com/aryansaini137/Virtual-Assistant-for-My-Computer-JARVIS-/blob/main/demo/jarvis_demo_SparkVideo.gif" width="550" height="300" />
+<img src="https://github.com/aryansaini137/Virtual-Assistant-for-My-Computer-JARVIS-/blob/main/demo/jarvis_demo_SparkVideo.gif" width="300" height="300" />
